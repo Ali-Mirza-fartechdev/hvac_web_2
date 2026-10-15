@@ -1,0 +1,76 @@
+/*
+ * Design tokens extracted from the Figma file "Heritage Craft - Template 2".
+ * Colors, type scale, radii and spacing come straight from the frames; if you
+ * change a brand value, change it here only.
+ */
+:root {
+  /* Brand */
+  --navy-900: #001e34;
+  --navy-700: #18334b;
+  --navy-300: #829cb8;
+  --sky-200: #afc9e7;
+  --sky-100: #cfe5ff;
+  --rust-600: #a43c25;
+  --rust-900: #3d0600;
+  --coral-400: #fd7e61;
+  --blush-100: #ffdad3;
+
+  /* Surfaces */
+  --bg-page: #f6fafe;
+  --bg-soft: #f0f4f8;
+  --bg-muted: #eaeef2;
+  --bg-white: #ffffff;
+
+  /* Lines */
+  --line: #c3c7cd;
+  --line-soft: #dfe3e7;
+  --line-faint: rgba(195, 199, 205, 0.4);
+
+  /* Text */
+  --ink: #171c1f;
+  --text: #43474d;
+  --muted: #73777e;
+  --danger: #ba1a1a;
+  --success: #065f46;
+
+  /* Type */
+  --font-display: 'Manrope Variable', 'Manrope', system-ui, sans-serif;
+  --font-body: 'Inter Variable', 'Inter', system-ui, -apple-system, 'Segoe UI', sans-serif;
+
+  /* Radii */
+  --radius: 4px;
+  --radius-sm: 2px;
+  --radius-round: 999px;
+
+  /* Layout */
+  --container: 1280px;
+  --gutter: 48px;
+  --section-y: 64px;
+
+  /* Elevation */
+  --shadow-btn: 0 2px 0 var(--rust-900);
+  --shadow-card: 0 1px 1px rgba(0, 0, 0, 0.05);
+  --shadow-float: 0 4px 12px rgba(0, 30, 52, 0.08);
+  --shadow-panel: 0 12px 32px rgba(0, 30, 52, 0.08);
+
+  /* Motion */
+  --ease-out: cubic-bezier(0.22, 1, 0.36, 1);
+  --dur-fast: 160ms;
+  --dur-base: 280ms;
+
+  --header-h: 121px;
+}
+
+@media (max-width: 1100px) {
+  :root {
+    --gutter: 32px;
+  }
+}
+
+@media (max-width: 720px) {
+  :root {
+    --gutter: 20px;
+    --section-y: 48px;
+    --header-h: 64px;
+  }
+}
